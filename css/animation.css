@@ -1,0 +1,276 @@
+@keyframes headerIn{
+    from{
+        opacity: 0;
+        top: -200px;
+    }
+    to{
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes mainFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes menubtnFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes headerLink{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    25%,75%{
+        transform: translateY(-3px);
+    }
+    50%{
+        transform: translateY(-6px);
+    }
+}
+
+/* 背景物件載入 */
+
+@keyframes LeftDownBGin{
+    from{
+        bottom: -344px;
+        left: -286px;
+    }
+    to{
+        bottom: -33px;
+        left: 0px;
+    }
+}
+
+@keyframes RightTopBGin{
+    from{
+        top: -202px;
+        right: -244px;
+    }
+    to{
+        top: 0px;
+        right: 0px;
+    }
+}
+
+@keyframes LeftTopBGin{
+    from{
+        top: -295px;
+        left: -100px;
+    }
+    to{
+        top: 0px;
+        left: 145px;
+    }
+}
+
+@keyframes LeftTop2BGin{
+    from{
+        left: -98px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+@keyframes RightDownBGin{
+    from{
+        bottom: -253px;
+        right: -388px;
+    }
+    to{
+        bottom: -33px;
+        right: 0px;
+    }
+}
+
+@keyframes flowerL1_BGin{
+    from{
+        top: 300px;
+        left: -103px;
+    }
+    to{
+        top: 615px;
+        left: 80px;
+    }
+}
+
+@keyframes flowerL2_BGin{
+    from{
+        top: -975px;
+        left: -595px;
+    }
+    to{
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@keyframes flowerL3_BGin{
+    from{
+        top: -499px;
+        left: -538px;
+    }
+    to{
+        top: 165px;
+        left: 69px;
+    }
+}
+
+@keyframes flowerR1_BGin{
+    from{
+        top: -920px;
+        right: -244px;
+    }
+    to{
+        top: 0px;
+        right: 0px;
+    }
+}
+
+@keyframes flowerR2_BGin{
+    from{
+        top: 600px;
+        right: -351px;
+    }
+    to{
+        top: 125px;
+        right: 83px;
+    }
+}
+
+@keyframes flowerR3_BGin{
+    from{
+        top: 400px;
+        right: -123px;
+    }
+    to{
+        top: 780px;
+        right: 0px;
+    }
+}
+
+/* h1翅膀動畫 */
+
+@keyframes h1beforewave{
+    0%,50%,100%{
+        transform:translate(-43px,18%) rotate(0deg);
+    }
+    25%{
+        transform:translate(-43px,18%) rotate(-10deg);
+    }
+    75%{
+        transform:translate(-43px,18%) rotate(10deg);
+    }
+}
+
+@keyframes h1afterwave{
+    0%,50%,100%{
+        transform:translate(10px,18%) rotate(0deg);
+    }
+    25%{
+        transform:translate(10px,18%) rotate(10deg);
+    }
+    75%{
+        transform:translate(10px,18%) rotate(-10deg);
+    }
+}
+
+/* tophover & 花花 */
+
+@keyframes tophoverwave{
+    0%{
+        transform: rotateZ(-5deg) translateY(0px);
+    }
+    25%{
+        transform: rotateZ(0deg) translateY(-3px);
+    }
+    50%{
+        transform: rotateZ(5deg) translateY(-6px);
+    }
+    75%{
+        transform: rotateZ(0deg) translateY(-9px);
+    }
+    100%{
+        transform: rotateZ(-5deg) translateY(-12px);
+    }
+}
+@keyframes topbtntri{
+    0%,100%{
+        top: 8px;
+    }
+    50%{
+        top: 13px;
+    }
+}
+@keyframes fadein {
+	0%,
+	100% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 100%;
+	}
+}
+@keyframes floatup {
+	0% {
+		top: 150px;
+	}
+	100% {
+		top: 50px;
+	}
+}
+@keyframes rotate{
+	0%{
+		transform: rotateZ(0deg);
+	}
+	100%{
+		transform: rotateZ(360deg);
+	}
+}
+@keyframes left {
+	0% {
+		left: 150px;
+	}
+	100% {
+		left: 130px;
+	}
+}
+@keyframes right {
+	0% {
+		left: 150px;
+	}
+	100% {
+		left: 170px;
+	}
+}
+@keyframes farleft {
+	0% {
+		left: 150px;
+	}
+	100% {
+		left: 100px;
+	}
+}
+@keyframes farright {
+	0% {
+		left: 150px;
+	}
+	100% {
+		left: 200px;
+	}
+}

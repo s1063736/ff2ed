@@ -1,0 +1,843 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td:empty, th:empty {
+  opacity: 0;
+}
+
+input, input:required {
+  box-shadow: none;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:active, input:-webkit-autofill:focus, input:-webkit-autofill:hover {
+  box-shadow: 0 0 0 30px #fff inset;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-results-button, input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  max-width: 100%;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+}
+
+picture {
+  display: inline-block;
+}
+
+figure {
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  border: 0;
+  background: 0 0;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button {
+  border: 0;
+  background: 0 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  box-sizing: content-box;
+  overflow: visible;
+  background: #000;
+  border: 0;
+  height: 1px;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  page-break-after: always;
+  width: 100%;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 100%;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 100%;
+}
+
+small {
+  font-size: 75%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -5px;
+}
+
+sup {
+  top: -5px;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+  outline: 0;
+}
+
+legend {
+  color: inherit;
+  white-space: normal;
+  display: block;
+  border: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+fieldset {
+  min-width: 0;
+}
+
+body:not(:-moz-handler-blocked) fieldset {
+  display: block;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4vh 0 9vh 0;
+}
+
+.wrap {
+  font-family: "微軟正黑體";
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+.main {
+  width: 1920px;
+  height: 100vh;
+  position: relative;
+}
+.main .mainBg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/index/mainBG.png);
+  text-align: center;
+  position: relative;
+}
+.main .mainBg .leaveshadow {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 1920px;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+  z-index: 100;
+  pointer-events: none;
+  animation: leaveshadowMove 50s linear infinite;
+}
+.main .mainBg .title1 {
+  top: 30%;
+  left: 0%;
+  transform: translate(0%, -50%) scale(0.9);
+  z-index: 98;
+  pointer-events: none;
+}
+.main .mainBg .title2 {
+  position: absolute;
+  top: 480px;
+  left: 590px;
+  z-index: 99;
+  pointer-events: none;
+}
+.main .mainBg .title1_Animation1 {
+  opacity: 0;
+  animation: titleFadein 0.8s ease 0.4s 1, title1floatmove 1.5s 1s ease-out infinite alternate;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .title2_Animation1 {
+  opacity: 0;
+  animation: titleZoom 0.8s ease 0.1s 1, titleRotate 0.8s ease 0.2s 1, titleBrightness 1s linear infinite alternate, floatmove 1.5s 1s ease-out infinite alternate;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .dotBox_Animation .ro1, .main .mainBg .dotBox_Animation .ro2, .main .mainBg .dotBox_Animation .ro3, .main .mainBg .dotBox_Animation .ro4, .main .mainBg .dotBox_Animation .ro5, .main .mainBg .dotBox_Animation .ro6, .main .mainBg .dotBox_Animation .ro7, .main .mainBg .dotBox_Animation .ro8 {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+}
+.main .mainBg .dotBox_Animation .ro2 {
+  transform: rotateZ(45deg);
+}
+.main .mainBg .dotBox_Animation .ro3 {
+  transform: rotateZ(90deg);
+}
+.main .mainBg .dotBox_Animation .ro4 {
+  transform: rotateZ(135deg);
+}
+.main .mainBg .dotBox_Animation .ro5 {
+  transform: rotateZ(180deg);
+}
+.main .mainBg .dotBox_Animation .ro6 {
+  transform: rotateZ(225deg);
+}
+.main .mainBg .dotBox_Animation .ro7 {
+  transform: rotateZ(270deg);
+}
+.main .mainBg .dotBox_Animation .ro8 {
+  transform: rotateZ(315deg);
+}
+.main .mainBg .dotBox_Animation .ro1 .dot, .main .mainBg .dotBox_Animation .ro3 .dot, .main .mainBg .dotBox_Animation .ro5 .dot, .main .mainBg .dotBox_Animation .ro7 .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 218, 56);
+  animation-delay: 0.5s;
+  animation: dot-move 1.3s 1 linear;
+  opacity: 0;
+}
+.main .mainBg .dotBox_Animation .ro2 .dot, .main .mainBg .dotBox_Animation .ro4 .dot, .main .mainBg .dotBox_Animation .ro6 .dot, .main .mainBg .dotBox_Animation .ro8 .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 208, 0);
+  animation: dot-move 0.9s 1 linear;
+  opacity: 0;
+}
+.main .mainBg .mapBG {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  animation: mapBG 0.5s 0.2s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .card_L {
+  position: fixed;
+  top: 105px;
+  left: -138px;
+  animation: card_L 0.5s 0.15s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .card_LT {
+  position: fixed;
+  top: -155px;
+  left: 148px;
+  animation: card_LT 0.5s 0.2s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .card_LB {
+  position: fixed;
+  bottom: -437px;
+  left: -192px;
+  animation: card_LB 0.8s 0s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .card_RT {
+  position: fixed;
+  top: -360px;
+  right: -260px;
+  animation: card_RT 0.7s 0s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .card_RB {
+  position: fixed;
+  bottom: -196px;
+  right: -250px;
+  animation: card_RB 0.5s 0.2s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .compass {
+  position: fixed;
+  width: 270px;
+  height: 433px;
+  top: 60px;
+  right: 219px;
+  rotate: -20deg;
+  background: url(../img/index/compass.png) no-repeat;
+  opacity: 0;
+  transform-origin: 109px 0px;
+  z-index: 1;
+  animation: compass 5s 0.35s ease-in-out 1, fadeIn 1s 0s ease-in 1;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+.main .mainBg .compass .pointer {
+  position: absolute;
+  top: 195px;
+  left: 135px;
+  transform-origin: 13px 42px;
+  animation: pointer 5s 0.35s ease-in-out 1, pointerRotate 10s 5s ease-in-out infinite;
+}
+.main .mainBg .mirror {
+  position: fixed;
+  width: 258px;
+  height: 417px;
+  bottom: -455px;
+  left: -259px;
+  background: url(../img/index/mirror1.png) no-repeat;
+  animation: mirror 1.5s 0.35s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .flowerLT {
+  position: fixed;
+  width: 810px;
+  height: 170px;
+  top: -170px;
+  left: 0px;
+  animation: flowerLT 0.8s 0.2s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .flowerLT .flower_LT1 {
+  position: absolute;
+  top: -65px;
+  left: 461px;
+}
+.main .mainBg .flowerLT .flower_LT2 {
+  position: absolute;
+  top: 122px;
+  left: 682px;
+}
+.main .mainBg .flowerLT .flower_LT3 {
+  position: absolute;
+  top: 25px;
+  left: 715px;
+}
+.main .mainBg .flowerLB {
+  position: fixed;
+  width: 350px;
+  height: 650px;
+  bottom: -350px;
+  left: -650px;
+  animation: flowerLB 0.8s 0.2s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .flowerLB .flower_LB1 {
+  position: absolute;
+  bottom: 568px;
+  left: 47px;
+}
+.main .mainBg .flowerLB .flower_LB2 {
+  position: absolute;
+  bottom: 417px;
+  left: -21px;
+}
+.main .mainBg .flowerLB .flower_LB3 {
+  position: absolute;
+  bottom: 233px;
+  left: 102px;
+}
+.main .mainBg .flowerLB .flower_LB4 {
+  position: absolute;
+  bottom: -72px;
+  left: 143px;
+}
+.main .mainBg .flowerRT {
+  position: fixed;
+  width: 300px;
+  height: 230px;
+  top: -230px;
+  right: -300px;
+  animation: flowerRT 0.8s 0.2s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .flowerRT .flower_RT1 {
+  position: absolute;
+  top: -63px;
+  right: 130px;
+}
+.main .mainBg .flowerRT .flower_RT2 {
+  position: absolute;
+  top: 100px;
+  right: 171px;
+}
+.main .mainBg .flowerRB {
+  position: fixed;
+  width: 400px;
+  height: 550px;
+  bottom: -400px;
+  right: -550px;
+  animation: flowerRB 0.8s 0.2s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+.main .mainBg .flowerRB .flower_RB1 {
+  position: absolute;
+  bottom: 440px;
+  right: 163px;
+}
+.main .mainBg .flowerRB .flower_RB2 {
+  position: absolute;
+  bottom: 364px;
+  right: 36px;
+}
+.main .mainBg .flowerRB .flower_RB3 {
+  position: absolute;
+  bottom: 166px;
+  right: -71px;
+}
+.main .mainBg .flowerRB .flower_RB4 {
+  position: absolute;
+  bottom: 20px;
+  right: 75px;
+}
+.main .mainBg .ship {
+  position: fixed;
+  bottom: 180px;
+  right: 430px;
+  opacity: 0;
+  z-index: 1;
+  animation: ship 20s 0s linear infinite, fadeIn 1s 0s ease-in 1;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+.main .logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  opacity: 0;
+  animation: fadeIn 1s 0s ease-in 1;
+  animation-fill-mode: forwards;
+}
+.main .menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.main .menu .map1 {
+  position: absolute;
+  top: 314px;
+  left: 261px;
+  max-width: 296px;
+  max-height: 230px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/index/MainBtnSurprise.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  scale: 0;
+  animation: mainbtn 0.8s 0.15s ease-out 1, floatmove 1s 0.3s ease-out infinite alternate;
+  animation-fill-mode: forwards;
+}
+.main .menu .map1:hover {
+  background-image: url(../img/index/MainBtnSurpriseHover.png);
+}
+.main .menu .map2 {
+  position: absolute;
+  top: 486px;
+  left: 267px;
+  max-width: 333px;
+  max-height: 421px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/index/MainBtnOpen.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  scale: 0;
+  animation: mainbtn 0.8s 0.2s ease-out 1, floatmove 1s 0.5s ease-out infinite alternate;
+  animation-fill-mode: forwards;
+}
+.main .menu .map2:hover {
+  background-image: url(../img/index/MainBtnOpenHover.png);
+}
+.main .menu .map3 {
+  position: absolute;
+  top: 403px;
+  right: 340px;
+  max-width: 313px;
+  max-height: 248px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/index/MainBtnCelebration.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  scale: 0;
+  animation: mainbtn 0.8s 0.25s ease-out 1, floatmove 1s 0.5s ease-out infinite alternate;
+  animation-fill-mode: forwards;
+}
+.main .menu .map3:hover {
+  background-image: url(../img/index/MainBtnCelebrationHover.png);
+}
+.main .menu .map4 {
+  position: absolute;
+  top: 601px;
+  right: 221px;
+  max-width: 297px;
+  max-height: 270px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/index/MainBtnThanks.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  scale: 0;
+  animation: mainbtn 0.8s 0.1s ease-out 1, floatmove 1s 0.3s ease-out infinite alternate;
+  animation-fill-mode: forwards;
+}
+.main .menu .map4:hover {
+  background-image: url(../img/index/MainBtnThanksHover.png);
+}
+.main .btn {
+  position: absolute;
+  bottom: 25px;
+  left: 0px;
+  width: 1920px;
+  height: 110px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.main .btn .register, .main .btn .download, .main .btn .gift {
+  width: 100%;
+  height: 100%;
+  margin: 0px 15px;
+  transition: 0.5s;
+  scale: 0;
+}
+.main .btn .register {
+  max-width: 270px;
+  max-height: 96px;
+  background-image: url(../img/index/midBtnRegister.png);
+  animation: mainbtn 0.8s 0.5s ease-out 1;
+  animation-fill-mode: forwards;
+}
+.main .btn .register:hover {
+  background-image: url(../img/index/midBtnRegisterHover.png);
+}
+.main .btn .download {
+  max-width: 270px;
+  max-height: 96px;
+  background-image: url(../img/index/midBtnDownload.png);
+  animation: mainbtn 0.8s 0.6s ease-out 1;
+  animation-fill-mode: forwards;
+}
+.main .btn .download:hover {
+  background-image: url(../img/index/midBtnDownloadHover.png);
+}
+.main .btn .gift {
+  max-width: 270px;
+  max-height: 96px;
+  background-image: url(../img/index/midBtnRecieve.png);
+  animation: mainbtn 0.8s 0.7s ease-out 1;
+  animation-fill-mode: forwards;
+}
+.main .btn .gift:hover {
+  background-image: url(../img/index/midBtnRecieveHover.png);
+}
+
+/* ===========版權聲明開關=========== */
+.footer-btn {
+  position: fixed;
+  z-index: 3;
+  bottom: 80px;
+  right: 239px;
+  color: rgba(121, 91, 0, 0.7);
+  font-weight: 600;
+  cursor: default;
+}
+.footer-btn .footer-btnbox {
+  position: fixed;
+  z-index: 1;
+  bottom: 56px;
+  right: 246px;
+  width: 50px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: rgba(194, 194, 194, 0.5);
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.13) inset;
+  cursor: pointer;
+}
+.footer-btn .footer-btnbox .footer-btnball {
+  width: 18px;
+  height: 18px;
+  margin: 3px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 18px;
+  color: #a3a3a3;
+}
+
+/* ===========footer=========== */
+footer {
+  position: fixed;
+  bottom: -500px;
+  height: auto;
+  background-color: rgb(96, 210, 255);
+  padding: 10px;
+  border-top: #ffffff solid 5px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+footer .digeamlogo {
+  transform: scale(1.2);
+  margin-right: 50px;
+}
+footer .galalogo {
+  transform: scale(1.2);
+  margin-right: 50px;
+}
+footer .copyright {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 80px;
+  font-size: 15px;
+}
+footer .copyright div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer .copyright a {
+  color: #ffffff;
+  display: inline;
+  border-bottom: 1.5px dotted #fff;
+}
+footer .plus {
+  width: 84px;
+}
+footer .notice {
+  width: -moz-fit-content;
+  width: fit-content;
+  list-style-type: none;
+  font-size: 10px;
+  margin: 0;
+  margin-left: -15px;
+}
+
+.row {
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

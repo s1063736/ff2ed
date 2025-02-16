@@ -1,0 +1,127 @@
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+    justify-content: center;
+    line-height: 1.5;
+    color: #212529;
+}
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+ .container-fluid{
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-btn{
+    position: fixed;
+    z-index: 999; 
+    bottom: 14px;
+    left: 65px;
+    color: rgb(114, 83, 0);
+    font-weight: 600;
+    cursor: default;
+    z-index: 6;
+}
+
+.footer-btnbox{
+    position: fixed;
+    z-index: 999;
+    bottom: 30px;
+    left: 135px;
+    width: 50px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: rgb(194, 194, 194);
+    box-shadow: 0px 3px 0px rgba(0,0,0,.13) inset;
+    cursor: pointer;
+}
+
+.footer-btnball{
+    width: 18px;
+    height: 18px;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:1px 2px 5px rgba(0,0,0,.3);
+    text-align: center;
+    line-height: 18px;
+    color: #a3a3a3;
+}
+
+
+
+/* ===========footer=========== */
+
+footer{
+    position: fixed;
+    bottom: -500px;
+    height: auto;
+    background-color: rgb(96, 210, 255);
+    padding: 10px;
+    border-top: #ffffff solid 5px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,.3);
+    width: 1920px;
+}
+
+
+.digeamlogo{
+    width: 180px;
+    height: 80px;
+    background: url(../img/footer/logo_digeam.png) no-repeat ;
+    background-position: center;
+}
+.galalogo{
+    width: 180px;
+    height: 80px;
+    background: url(../img/footer/logo_gala.png) no-repeat ;
+    background-position: center;
+}
+
+.copyright{
+    width:  fit-content;
+    height: 80px;
+    font-size: 15px;
+}
+
+.copyright>div{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.copyright a{
+    color: #ffffff;
+}
+
+.plus{
+    width: 80px;
+    height: 80px;
+    background: url(../img/footer/12plus.jpg) no-repeat;
+    background-position: center;
+}
+
+.notice{
+    width:  fit-content;
+    list-style-type: none;
+    font-size: 10px;
+    margin: 0;
+    margin-left: -15px;
+}

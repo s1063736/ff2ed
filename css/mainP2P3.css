@@ -1,0 +1,493 @@
+body{
+    background: url(../img/mainBg.png) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+  
+    &::-webkit-scrollbar-button {
+        background-color: #d9a060;
+    }
+  
+    &::-webkit-scrollbar-track-piece {
+        background-color: #d9a060;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: #0082d7;
+    }
+  
+    &::-webkit-scrollbar-track {
+        box-shadow: transparent;
+    }
+
+}
+
+/* ===========背景物件=========== */
+
+.LeftDownBG{
+    position: fixed;
+    bottom: -344px;
+    left: -286px;
+    animation: LeftDownBGin .5s .35s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.RightTopBG{
+    position: fixed;
+    top: -202px;
+    right: -244px;
+    animation: RightTopBGin .5s .3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.LeftTopBG{
+    position: fixed;
+    top: -295px;
+    left: -100px;
+    animation: LeftTopBGin .5s .5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.LeftTop2BG{
+    position: fixed;
+    top: 100px;
+    left: -98px;
+    animation: LeftTop2BGin .5s .4s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.RightDownBG{
+    position: fixed;
+    bottom: -253px;
+    right: -388px;
+    animation: RightDownBGin .5s .35s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.flowerL1_BG{
+    position: fixed;
+    top: 615px;
+    left: 80px;
+    animation: rotate 2s 0s ease-in 1 reverse, flowerL1_BGin .9s .28s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.flowerL2_BG{
+    position: fixed;
+    top: -975px;
+    left: -595px;
+    animation: flowerL2_BGin .9s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.flowerL3_BG{
+    position: fixed;
+    top: -499px;
+    left: -538px;
+    animation: flowerL3_BGin 1.2s 0s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.flowerR1_BG{
+    position: fixed;
+    top: -920px;
+    right: -244px;
+    animation: flowerR1_BGin .8s .3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.flowerR2_BG{
+    position: fixed;
+    top: 600px;
+    right: -351px;
+    animation: flowerR2_BGin .7s .5s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.flowerR3_BG{
+    position: fixed;
+    top: 400px;
+    right: -123px;
+    animation: rotate 1.8s 0s ease-out 1, flowerR3_BGin .7s .5s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+/* ===========主內容=========== */
+
+.mainP2P3{
+    height: auto;
+    padding-bottom: 60px;
+}
+
+.Revision-maintitle{
+    background: url(../img/revision/TitleRevision.png)no-repeat;
+    width: 654px;
+    height: 92px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: -50px;
+    opacity: 0;
+    animation: mainFadeIn 1s .2s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.Celebration-maintitle{
+    background: url(../img/celebration/TitleCelebration.png)no-repeat;
+    width: 542px;
+    height: 94px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: -50px;
+    opacity: 0;
+    animation: mainFadeIn 1s .2s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.page1,.page2,.page3,.page4,.page5{
+    position: relative;
+    width: 1504px;
+    height: 819px;
+    margin: auto;
+    opacity: 0;
+    background: url(../img/mainbg2.png) no-repeat;
+    background-size: contain;
+    animation: mainFadeIn 1s  ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.P2P3tab-title{
+    display:block; 
+    list-style:none;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.P2P3tab-title > li{ 
+    display:inline-block;
+    margin: 0 20px;
+    width: 200px;
+    height: 45px; 
+    line-height:40px; 
+    list-style:none;
+    text-align: center;
+    background:#ffffff;
+    border: 2px solid #0082d7 ;
+    color:#0082d7; 
+    font-size: 21px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.P2P3tab-title > li.active , .P2P3tab-title > li:hover{ 
+    background:#0082d7;
+    color:#FFF;
+}
+
+.P2P3tab-inner{ 
+    color:#494949;
+    padding:20px;
+    padding-top: 45px;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 60%;
+    overflow-y: overlay;
+    
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+  
+    &::-webkit-scrollbar-button {
+        background: transparent;
+        border-radius: 4px;
+    }
+  
+    &::-webkit-scrollbar-track-piece {
+        background: transparent;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 129, 214, 0.3);
+        border: 1px solid rgba(0, 129, 214, 1);
+    }
+  
+    &::-webkit-scrollbar-track {
+        box-shadow: transparent;
+    }
+}
+
+/* ===========文字外觀=========== */
+
+.text-center{
+    text-align: center;
+    font-size: 18.72px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.text-left{
+    text-align: left;
+    font-size: 18.72px;
+    font-weight: 600;
+    margin: auto 10px;
+}
+
+.highlight{
+    color: #ff6000;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+h1{
+    position: relative;
+    color: #0795ff;
+    font-weight: 600; 
+    font-size: 40px !important;
+    margin: 20px auto;
+    margin-top: 130px;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 33px;
+        height: 29px;
+        background: url(../img/h1before.png)no-repeat;
+        background-position: center;
+        top: 0;
+        transform-origin: 33px 14.5px;
+        animation: h1beforewave 5s infinite linear;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        width: 33px;
+        height: 29px;
+        background: url(../img/h1after.png)no-repeat;
+        background-position: center;
+        top: 0;
+        transform-origin: 0px 14.5px;
+        animation: h1afterwave 5s infinite linear;
+    }
+}
+
+h2{
+    position: relative;
+    color: #367eec;
+    font-weight: 600; 
+    font-size: 26px !important;
+    height: 44px;
+    margin: auto;
+    margin-bottom: 20px;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 3px;
+        background-color: #367eec;
+        top: 0;
+        transform: translate(-30px,17px);
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 3px;
+        background-color: #367eec;
+        top: 0;
+        transform: translate(5px,17px);
+    }
+}
+
+.P2P3tab-inner ol{
+    width: 65%;
+    margin: 40px auto;
+    padding-left: 70px;
+    font-size: 21px;
+    font-weight: 600;
+
+    &.notice{
+        margin-top: 10px;
+        padding-left: 20px;
+        list-style: decimal;
+    }
+}
+
+.P2P3tab-inner div img{
+    border: solid 2px #0089e0;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* ===========表格外觀=========== */
+
+.table1{
+    width: 900px;
+    margin: auto;
+    font-weight: 500;
+    border: 0;
+    border-collapse: collapse;
+    & tr, & td{
+        border: solid 2px #0089e0;
+    }
+    & img{
+        margin: auto 10px;
+    }
+}
+
+.table-title{
+    background-color: rgba(0, 157, 255, 0.5);
+    color: #FFF;
+}
+
+.table-subtitle{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #0089e0;
+}
+
+.table-main{
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.35);
+    font-size: 18.72px;
+}
+
+.tableimgP1-1-2{
+    margin: 10px;
+    width: 70%;
+    height: auto;
+    background: url(../img/revision/p1.png)no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.35);
+    vertical-align:bottom;
+    text-align: center;
+    color: #0089e0;
+    font-size: 1.3rem;
+}
+
+.tableimgP1-2{
+    width: auto;
+    height: 150px;
+    padding: 5px 80px;
+    background: url(../img/revision/p2.png)no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.table-mainP1-3-2L{
+    width: 33%;
+}
+
+.t3_2tbody{
+    width: 1050px;
+}
+
+.table-mainP2-3-2M{
+    width: 40%;
+}
+
+.t5_1tbody,.t5_2tbody{
+    width: 700px;
+}
+
+.table-mainP2-5{
+    width: 50%;
+}
+
+/* ===========TopBtn=========== */
+
+.Top{
+    position: fixed;
+    right: 100px;
+    bottom: 40px;
+    width: 66px;
+    height: 65px;
+    color: #FFF;
+    text-align: center;
+    line-height: 65px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    background: url(../img/BtnTop.png)no-repeat;
+    cursor: pointer;
+    transition: 1s;
+
+    &::after{
+        position: absolute;
+        content: '';
+        width: 22px;
+        height: 13px;
+        background: url(../img/BtnTopTri.png)no-repeat;
+        background-position: center;
+        top: -10px;
+        left: 22px;
+        opacity: 0;
+        transition: .2s;
+    }
+
+    &:hover::after{
+        opacity: 1;
+        top: 8px;
+        animation: topbtntri 2s infinite ease-in-out;
+    }
+
+    &:hover{
+        line-height: 80px;
+        animation: tophoverwave 2s infinite linear;
+        animation-direction: alternate;
+    }
+
+    &:hover .s1 {
+        animation: fadein 3s ease infinite, floatup 3s ease infinite,left 3s ease infinite, rotate 3s ease infinite;
+    }
+
+    &:hover .s2 {
+        animation: fadein 3s 0.3s ease infinite, floatup 3s 0.3s ease infinite,	right 3s 0.3s ease infinite, rotate 3s 0.3s ease infinite;
+    }
+
+    &:hover .s3 {
+        animation: fadein 3s .6s ease infinite, floatup 3s .6s ease infinite,farleft 3s .6s ease infinite, rotate 3s .6s ease infinite;
+    }
+
+    &:hover .s4 {
+        animation: fadein 3s 1.2s ease infinite, floatup 3s 1.2s ease infinite,	farright 3s 1.2s ease infinite, rotate 3s 1.2s ease infinite;
+    }
+
+    &:hover .s5 {
+        animation: fadein 3s 1.8s linear infinite, floatup 3s 1.8s linear infinite, rotate 3s 1.8s ease infinite;
+    }
+
+    &:hover .s6 {
+        animation: fadein 3s 1.5s ease infinite, floatup 3s 1.5s ease infinite,	left 3s 1.5s ease infinite, rotate 3s 1.5s ease infinite;
+    }
+
+    &:hover .s7 {
+        animation: fadein 3s 2.1s ease infinite, floatup 3s 2.1s ease infinite,	right 3s 2.1s ease infinite, rotate 3s 2.1s ease infinite;
+    }
+
+    &:hover .s8 {
+        animation: fadein 3s 2.4s ease infinite, floatup 3s 2.4s ease infinite, farleft 3s 2.4s ease infinite, rotate 3s 2.4s ease infinite
+    }
+}
+
+.flowerbox{
+	transform: translateY(-215px) translateX(-130px);
+}
+
+.flower {
+	width: 20px;
+	height: 20px;
+	background: url(../img/flower.png);
+    background-size: cover;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	opacity: 0;
+}

@@ -1,0 +1,440 @@
+.main {
+    width: 1920px;
+    height: 100vh;
+    position: relative;
+
+    .mainBg {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/index/mainBG.png);
+        text-align: center;
+        position: relative;
+        
+        .leaveshadow{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            width: 1920px;
+            mix-blend-mode: multiply;
+            opacity: .5;
+            z-index: 100;
+            pointer-events: none;
+            animation: leaveshadowMove 50s linear infinite;
+        }
+        .title1{
+            top: 30%;
+            left: 0%;
+            transform: translate(0%, -50%) scale(0.9);
+            z-index: 98;
+            pointer-events: none;
+        }
+        .title2{
+            position: absolute;
+            top: 480px;
+            left: 590px;
+            z-index: 99;
+            pointer-events: none;
+        }
+        .title1_Animation1{
+            opacity: 0;
+            animation: titleFadein 0.8s ease 0.4s 1, title1floatmove 1.5s 1s ease-out infinite alternate;
+            animation-fill-mode: forwards;
+        } 
+        .title2_Animation1{
+            opacity: 0;
+            animation: titleZoom 0.8s ease 0.1s 1 , titleRotate 0.8s ease 0.2s 1 , titleBrightness 1s linear infinite alternate, floatmove 1.5s 1s ease-out infinite alternate;
+            animation-fill-mode: forwards;
+        }        
+        .dotBox_Animation{
+            
+            .ro1, .ro2, .ro3, .ro4, .ro5, .ro6, .ro7, .ro8 {
+                position: absolute;
+                top: 70px;
+                left: 50%;
+                width: 20px;
+                height: 20px;
+            }        
+            .ro2 {
+                transform: rotateZ(45deg);
+            }        
+            .ro3 {
+                transform: rotateZ(90deg);
+            }        
+            .ro4 {
+                transform: rotateZ(135deg);
+            }        
+            .ro5 {
+                transform: rotateZ(180deg);
+            }        
+            .ro6 {
+                transform: rotateZ(225deg);
+            }        
+            .ro7 {
+                transform: rotateZ(270deg);
+            }        
+            .ro8 {
+                transform: rotateZ(315deg);
+            }        
+            .ro1, .ro3, .ro5, .ro7 {
+                .dot {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                    background-color: rgb(255, 218, 56);
+                    animation-delay: 0.5s;
+                    animation: dot-move 1.3s 1 linear;
+                    opacity: 0;
+                }
+            }        
+            .ro2, .ro4, .ro6, .ro8 {
+                .dot {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                    background-color: rgb(255, 208, 0);
+                    animation: dot-move 0.9s 1 linear;
+                    opacity: 0;
+                }
+            }
+        
+        }
+        .mapBG{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            animation: mapBG .5s .2s ease-in-out 1;
+            animation-fill-mode: forwards;
+        }
+        .card_L{
+            position: fixed;
+            top: 105px;
+            left: -138px;
+            animation: card_L .5s .15s ease-in-out 1;
+            animation-fill-mode: forwards;
+        }
+        .card_LT{
+            position: fixed;
+            top: -155px;
+            left: 148px;
+            animation: card_LT .5s .2s ease-in-out 1;
+            animation-fill-mode: forwards;
+        }
+        .card_LB{
+            position: fixed;
+            bottom: -437px;
+            left: -192px;
+            animation: card_LB .8s 0s ease-in-out 1;
+            animation-fill-mode: forwards;
+        }
+        .card_RT{
+            position: fixed;
+            top: -360px;
+            right: -260px;
+            animation: card_RT .7s 0s ease-in-out 1;
+            animation-fill-mode: forwards;
+        }
+        .card_RB{
+            position: fixed;
+            bottom: -196px;
+            right: -250px;
+            animation: card_RB .5s .2s ease-in-out 1;
+            animation-fill-mode: forwards;
+        }
+        .compass{
+            position: fixed;
+            width: 270px;
+            height: 433px; 
+            top: 60px;
+            right: 219px;
+            rotate: -20deg;
+            background: url(../img/index/compass.png)no-repeat;
+            opacity: 0;
+            transform-origin: 109px 0px;
+            z-index: 1;
+            animation: compass 5s .35s ease-in-out 1 ,fadeIn 1s 0s ease-in 1;
+            animation-fill-mode: forwards;
+            pointer-events: none;
+            .pointer{
+                position: absolute;
+                top: 195px;
+                left: 135px;
+                transform-origin: 13px 42px;
+                animation: pointer 5s .35s ease-in-out 1,pointerRotate 10s 5s ease-in-out infinite;
+            }
+        }
+        .mirror{
+            position: fixed;
+            width: 258px;
+            height: 417px;
+            bottom: -455px;
+            left: -259px;
+            background: url(../img/index/mirror1.png)no-repeat;
+            animation: mirror 1.5s .35s ease-in-out 1;
+            animation-fill-mode: forwards;
+        }
+        .flowerLT{
+            position: fixed;
+            width: 810px;
+            height: 170px; 
+            top: -170px;
+            left: 0px;
+            animation: flowerLT .8s .2s ease-in-out 1;
+            animation-fill-mode: forwards;
+            .flower_LT1{
+                position: absolute;
+                top: -65px;
+                left: 461px;
+            }
+            .flower_LT2{
+                position: absolute;
+                top: 122px;
+                left: 682px;
+            }
+            .flower_LT3{
+                position: absolute;
+                top: 25px;
+                left: 715px;
+            }
+        }
+        .flowerLB{
+            position: fixed;
+            width: 350px;
+            height: 650px;
+            bottom: -350px;
+            left: -650px;
+            animation: flowerLB .8s .2s ease-in-out 1;
+            animation-fill-mode: forwards;
+            
+            .flower_LB1{
+                position: absolute;
+                bottom: 568px;
+                left: 47px;
+            }
+            .flower_LB2{
+                position: absolute;
+                bottom: 417px;
+                left: -21px;
+            }
+            .flower_LB3{
+                position: absolute;
+                bottom: 233px;
+                left: 102px;
+            }
+            .flower_LB4{
+                position: absolute;
+                bottom: -72px;
+                left: 143px;
+            }
+        }
+        .flowerRT{
+            position: fixed;
+            width: 300px;
+            height: 230px;
+            top: -230px;
+            right: -300px;
+            animation: flowerRT .8s .2s ease-in-out 1;
+            animation-fill-mode: forwards;
+            .flower_RT1{
+                position: absolute;
+                top: -63px;
+                right: 130px;
+            }
+            .flower_RT2{
+                position: absolute;
+                top: 100px;
+                right: 171px;
+            }
+        }
+        .flowerRB{
+            position: fixed;
+            width: 400px;
+            height: 550px;
+            bottom: -400px;
+            right: -550px;
+            animation: flowerRB .8s .2s ease-in-out 1;
+            animation-fill-mode: forwards;
+            .flower_RB1{
+                position: absolute;
+                bottom: 440px;
+                right: 163px;
+            }
+            .flower_RB2{
+                position: absolute;
+                bottom: 364px;
+                right: 36px;
+            }
+            .flower_RB3{
+                position: absolute;
+                bottom: 166px;
+                right: -71px;
+            }
+            .flower_RB4{
+                position: absolute;
+                bottom: 20px;
+                right: 75px;
+            }
+            
+        }
+        .ship{
+            position: fixed;
+            bottom: 180px;
+            right: 430px;
+            opacity: 0;
+            z-index: 1;
+            animation: ship 20s 0s linear infinite ,fadeIn 1s 0s ease-in 1;
+            animation-fill-mode: forwards;
+            pointer-events: none;
+        }
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        opacity: 0;
+        animation: fadeIn 1s 0s ease-in 1;
+        animation-fill-mode: forwards;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+
+        .map1 {
+            position: absolute;
+            top: 314px;
+            left: 261px;
+            max-width: 296px;
+            max-height: 230px;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/index/MainBtnSurprise.png);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            transition: .5s;
+            scale: 0;
+            animation: mainbtn .8s .15s ease-out 1, floatmove 1s .3s ease-out infinite alternate;
+            animation-fill-mode: forwards;
+            &:hover {
+                background-image: url(../img/index/MainBtnSurpriseHover.png);
+            }
+        }
+
+        .map2 {
+            position: absolute;
+            top: 486px;
+            left: 267px;
+            max-width: 333px;
+            max-height: 421px;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/index/MainBtnOpen.png);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            transition: .5s;
+            scale: 0;
+            animation: mainbtn .8s .2s ease-out 1, floatmove 1s .5s ease-out infinite alternate;
+            animation-fill-mode: forwards;
+            &:hover {
+                background-image: url(../img/index/MainBtnOpenHover.png);
+            }
+        }
+
+        .map3 {
+            position: absolute;
+            top: 403px;
+            right: 340px;
+            max-width: 313px;
+            max-height: 248px;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/index/MainBtnCelebration.png);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            transition: .5s;
+            scale: 0;
+            animation: mainbtn .8s .25s ease-out 1, floatmove 1s .5s ease-out infinite alternate;
+            animation-fill-mode: forwards;
+            &:hover {
+                background-image: url(../img/index/MainBtnCelebrationHover.png);
+            }
+        }
+
+        .map4 {
+            position: absolute;
+            top: 601px;
+            right: 221px;
+            max-width: 297px;
+            max-height: 270px;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/index/MainBtnThanks.png);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            transition: .5s;
+            scale: 0;
+            animation: mainbtn .8s .1s ease-out 1, floatmove 1s .3s ease-out infinite alternate;
+            animation-fill-mode: forwards;
+            &:hover {
+                background-image: url(../img/index/MainBtnThanksHover.png);
+            }
+        }
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 25px;
+        left: 0px;
+        width: 1920px;
+        height: 110px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        .register, .download, .gift {
+            width: 100%;
+            height: 100%;
+            margin: 0px 15px;
+            transition: .5s;
+            scale: 0;
+        }
+        .register {
+            max-width: 270px;
+            max-height: 96px;
+            background-image: url(../img/index/midBtnRegister.png);
+            animation: mainbtn .8s .5s ease-out 1;
+            animation-fill-mode: forwards;
+            &:hover {
+                background-image: url(../img/index/midBtnRegisterHover.png);
+            }
+        }
+        .download {
+            max-width: 270px;
+            max-height: 96px;
+            background-image: url(../img/index/midBtnDownload.png);
+            animation: mainbtn .8s .6s ease-out 1;
+            animation-fill-mode: forwards;
+            &:hover {
+                background-image: url(../img/index/midBtnDownloadHover.png);
+            }
+        }
+        .gift {
+            max-width: 270px;
+            max-height: 96px;
+            background-image: url(../img/index/midBtnRecieve.png);
+            animation: mainbtn .8s .7s ease-out 1;
+            animation-fill-mode: forwards;
+            &:hover {
+                background-image: url(../img/index/midBtnRecieveHover.png);
+            }
+        }
+
+    }
+}

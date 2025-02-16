@@ -1,0 +1,131 @@
+/* ===========header=========== */
+
+header{
+    position: fixed;
+    top: -200px;
+    height: 100px;
+    background-color: rgba(192, 86, 0, 0.24);
+    z-index: 999;
+    opacity: 0;
+    animation: headerIn .8s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.logo{
+    width: 209px;
+    height: 187px;
+    background: url(../img/header/LOGO.png);
+    margin: 0 50px;
+}
+
+/* ===========menu=========== */
+
+.menubtn-Surprise,.menubtn-Revision,.menubtn-Celebration,.menubtn-Thanks{
+    margin: 5px 0px;
+    transition: .5s;
+}
+
+.menubtn-Surprise{
+    background: url(../img/header/TopBtnSurprise.png) no-repeat;
+    background-position: center;
+    width: 269px;
+    height: 82px;
+    opacity: 0;
+    animation: menubtnFadeIn .5s 0s  ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.menubtn-Revision{
+    background: url(../img/header/TopBtnRevision.png) no-repeat;
+    background-position: center;
+    width: 295px;
+    height: 82px;
+    opacity: 0;
+    animation: menubtnFadeIn .5s .2s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.menubtn-Celebration{
+    background: url(../img/header/TopBtnCelebration.png) no-repeat;
+    background-position: center;
+    width: 266px;
+    height: 82px;
+    opacity: 0;
+    animation: menubtnFadeIn .5s .4s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.menubtn-Thanks{
+    background: url(../img/header/TopBtnThanks.png) no-repeat;
+    background-position: center;
+    width: 269px;
+    height: 82px;
+    opacity: 0;
+    animation: menubtnFadeIn .5s .6s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.menubtn-Surprise:hover{
+    background: url(../img/header/TopBtnSurpriseHover.png) no-repeat;
+    background-position: center;
+}
+
+.menubtn-Revision:hover{
+    background: url(../img/header/TopBtnRevisionHover.png) no-repeat;
+    background-position: center;
+}
+
+.menubtn-Celebration:hover{
+    background: url(../img/header/TopBtnCelebrationHover.png) no-repeat;
+    background-position: center;
+}
+
+.menubtn-Thanks:hover{
+    background: url(../img/header/TopBtnThanksHover.png) no-repeat;
+    background-position: center;
+}
+
+/* ===========連結按扭=========== */
+
+.linkbtn-Register,.linkbtn-Download,.linkbtn-Gift,.linkbtn-Leave{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.linkbtn-Register{
+    background: url(../img/header/topBtnRegister.png) no-repeat;
+    background-position: center;
+}
+
+.linkbtn-Download{
+    background: url(../img/header/topBtnDownload.png) no-repeat;
+    background-position: center;
+}
+
+.linkbtn-Gift{
+    background: url(../img/header/topBtnGift.png) no-repeat;
+    background-position: center;
+}
+
+.linkbtn-Leave{
+    background: url(../img/header/topBtnLeave.png) no-repeat;
+    background-position: center;
+    
+    &:hover::before {
+        color: #fff;
+        background-color: #522c00a6;
+        padding: 5px;
+        position: absolute;
+        font-size: 15px;
+        top: 60px;
+        left: 10px;
+        content: "前往2週年\A活動主頁";
+        white-space: pre;
+    }
+}
+
+.linkbtn-Register:hover,.linkbtn-Download:hover,.linkbtn-Gift:hover,.linkbtn-Leave:hover{
+    animation: headerLink .8s infinite linear;
+}

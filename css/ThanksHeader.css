@@ -1,0 +1,322 @@
+
+/* ===========背景物件=========== */
+
+.LeftDownBG{
+  position: fixed;
+  bottom: -344px;
+  left: -286px;
+  animation: LeftDownBGin .5s .35s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+.RightTopBG{
+  position: fixed;
+  top: -202px;
+  right: -244px;
+  animation: RightTopBGin .5s .3s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+.LeftTopBG{
+  position: fixed;
+  top: -295px;
+  left: -100px;
+  animation: LeftTopBGin .5s .5s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+.LeftTop2BG{
+  position: fixed;
+  top: 100px;
+  left: -98px;
+  animation: LeftTop2BGin .5s .4s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+.RightDownBG{
+  position: fixed;
+  bottom: -253px;
+  right: -388px;
+  animation: RightDownBGin .5s .35s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+.flowerL1_BG{
+  position: fixed;
+  top: 300px;
+  left: -103px;
+  animation: rotate 2s 0s ease-in 1 reverse, flowerL1_BGin .9s .28s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+.flowerL2_BG{
+  position: fixed;
+  top: -975px;
+  left: -595px;
+  animation: flowerL2_BGin .9s ease-out 1;
+  animation-fill-mode: forwards;
+}
+
+.flowerL3_BG{
+  position: fixed;
+  top: -499px;
+  left: -538px;
+  animation: flowerL3_BGin 1.2s 0s ease-out 1;
+  animation-fill-mode: forwards;
+}
+
+.flowerR1_BG{
+  position: fixed;
+  top: -920px;
+  right: -244px;
+  animation: flowerR1_BGin .8s .3s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+
+.flowerR2_BG{
+  position: fixed;
+  top: 600px;
+  right: -351px;
+  animation: flowerR2_BGin .7s .5s ease-out 1;
+  animation-fill-mode: forwards;
+}
+
+.flowerR3_BG{
+  position: fixed;
+  top: 400px;
+  right: -123px;
+  animation: rotate 1.8s 0s ease-out 1, flowerR3_BGin .7s .5s ease-out 1;
+  animation-fill-mode: forwards;
+}
+
+/* ===========背景物件=========== */
+
+body{
+    margin: 0;
+    top: 0px;
+    left: 0px;
+    background-image:url(../img/mainBg.png);
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bar{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 25%;
+    position: fixed;
+    justify-content: space-between;
+    animation: headerIn .8s ease-out 1;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+.logo{
+    left: 50px;
+    right: 0px;
+    background-image: url(../img/header/LOGO.png) ;
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 80%;
+    position: relative;
+    z-index: 2;
+}
+
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+.bar_back{
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(192, 87, 0, 0.2);
+    z-index: 1;
+    animation: headerIn .9s ease-out 1;
+    animation-fill-mode: forwards;
+}
+.menu{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    z-index: 3;
+    margin-top:5px;
+    margin-left:390px;
+    margin-right: 90px;
+    
+}
+.menu a{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+.menu_btn01{
+    background: url(../img/header/TopBtnSurprise.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    animation: menubtnFadeIn .5s 0s  ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.menu_btn02{
+    background: url(../img/header/TopBtnRevision.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-left: -3px;
+    padding-right: 20px;
+    animation: menubtnFadeIn .5s .2s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.menu_btn03{
+    background: url(../img/header/TopBtnCelebration.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    animation: menubtnFadeIn .5s .4s ease-out 1;
+    animation-fill-mode: forwards;
+}
+
+.menu_btn04{
+    background: url(../img/header/TopBtnThanksHover.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    animation: menubtnFadeIn .5s .5s ease-out 1;
+    animation-fill-mode: forwards;
+    margin-left: -5px;
+}
+
+.icon_box{
+    height: 60%;
+    width: 17%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 18px;
+    z-index: 3;
+}
+.icon_box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+.login{
+    background: url(../img/header/topBtnRegister.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.download{
+    background: url(../img/header/topBtnDownload.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.gift{
+    background: url(../img/header/topBtnGift.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.home{
+    background: url(../img/header/topBtnLeave.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.home:hover::before {
+  color: #fff;
+  background-color: #522c00a6;
+  padding: 5px;
+  position: absolute;
+  font-size: 15px;
+  top: 60px;
+  right: 10px;
+  content: "前往2週年\A活動主頁";
+  white-space: pre;
+}
+.login:hover,.download:hover,.gift:hover,.home:hover{
+  animation: headerLink .8s infinite linear;
+}
+
+/* topBtn hover */
+
+  .menu_btn01:hover{
+    background: url(../img/header/TopBtnSurpriseHover.png);
+    background-repeat: no-repeat;
+    transition-duration: .4s;
+  }
+  .menu_btn02:hover{
+    background: url(../img/header/TopBtnRevisionHover.png);
+    background-repeat: no-repeat;
+    transition-duration: .4s;
+  }
+  .menu_btn03:hover{
+    background: url(../img/header/TopBtnCelebrationHover.png);
+    background-repeat: no-repeat;
+    transition-duration: .4s;
+  }
+
+/* topBtn hover */
+
+/* lottery */
+.lotteryBtn{
+    background: url(../img/Thanks/drawing.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 5;
+    width: 434px;
+    height: 216px;
+    left: 1300px;
+    top: 150px;
+    animation: lotteryBtn_float 2s infinite ease-in-out;
+}
+.lotteryBtn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+.lotteryBtn:hover {
+    background: url(../img/Thanks/drawingHover.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: all 0.4s ease;
+  }
+  @keyframes lotteryBtn_float {
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+
+
+  /* lottery */
+
+

@@ -1,0 +1,453 @@
+/* 主頁動畫 */
+@keyframes titleFadein{
+    0%{
+        opacity: 0;
+        top: 25%;
+    }
+    100%{
+        opacity: 1;
+        top: 30%;
+    }
+}
+
+@keyframes title1floatmove{
+    0%{
+        top: 30%;
+    }
+    100%{
+        top: 29%;
+    }
+}
+
+@keyframes dot-move {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        transform: translateY(50px);
+        height: 100px;
+        opacity: 1;
+    }
+
+    70% {
+        height: 20px;
+        transform: translateY(160px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(170px);
+        opacity: 0;
+    }
+}
+
+@keyframes titleZoom {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    60%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    70%{
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes titleRotate {
+    0%,100%{
+        rotate: 0deg;
+    }
+    20%,60%{
+        rotate: 5deg;
+    }
+    40%,80%{
+        rotate: -5deg;
+    }
+}
+
+@keyframes titleBrightness{
+    0%{
+        filter: brightness(1);
+    }
+    100%{
+        filter: brightness(1.1);
+    }
+}
+
+@keyframes leaveshadowMove{
+    0%{
+        top: 0px;
+        opacity: .5;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        top: -2900px;
+        opacity: .5;
+    }
+}
+
+@keyframes card_L{
+    from{
+        top: 105px;
+        left: -138px;
+    }
+    to{
+        top: 105px;
+        left: 0px;
+    }
+}
+
+@keyframes card_LT{
+    from{
+        top: -155px;
+        left: 148px;
+    }
+    to{
+        top: 0px;
+        left: 148px;
+    }
+}
+
+@keyframes card_LB{
+    from{
+        bottom: -437px;
+        left: -192px;
+    }
+    to{
+        bottom: -5px;
+        left: 0px;
+    }
+}
+
+@keyframes card_RT{
+    from{
+        top: -360px;
+        right: -260px;
+    }
+    to{
+        top: 0px;
+        right: 0px;
+    }
+}
+
+@keyframes card_RB{
+    from{
+        bottom: -196px;
+        right: -250px;
+    }
+    to{
+        bottom: -5px;
+        right: 0px;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes compass{
+    0%{
+        rotate: -20deg;
+    }
+    20%{
+        rotate: 20deg;
+    }
+    40%{
+        rotate: -15deg;
+    }
+    60%{
+        rotate: 10deg;
+    }
+    80%{
+        rotate: -5deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+
+@keyframes pointer{
+    0%{
+        rotate: 20deg;
+    }
+    20%{
+        rotate: -20deg;
+    }
+    40%{
+        rotate: 15deg;
+    }
+    60%{
+        rotate: -10deg;
+    }
+    80%{
+        rotate: 5deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+
+@keyframes pointerRotate{
+    0%{
+        rotate: 0deg;
+    }
+    10%{
+        rotate: -120deg;
+    }
+    20%{
+        rotate: 360deg;
+    }
+    30%{
+        rotate: -10deg;
+    }
+    40%{
+        rotate: 180deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    60%{
+        rotate: 240deg;
+    }
+    70%{
+        rotate: -60deg;
+    }
+    80%{
+        rotate: 120deg;
+    }
+    90%{
+        rotate: -30deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+
+@keyframes flowerLT{
+    from{
+        top: -170px;
+        left: 0px;
+    }
+    to{
+        top: 0px;
+        left: 0px;
+    }
+}
+
+@keyframes flowerLB{
+    from{
+        bottom: -650px;
+        left: -350px;
+    }
+    to{
+        bottom: 0px;
+        left: 0px;
+    }
+}
+
+@keyframes flowerRT{
+    from{
+        top: -230px;
+        right: -300px;
+    }
+    to{
+        top: 0px;
+        right: 0px;
+    }
+}
+
+@keyframes flowerRB{
+    from{
+        bottom: -400px;
+        right: -550px;
+    }
+    to{
+        bottom: 0px;
+        right: 0px;
+    }
+}
+
+@keyframes mirror{
+    0%{
+        bottom: -455px;
+        left: -259px;
+    }
+    60%{
+        bottom: -5px;
+        left: 0px;
+    }
+    100%{
+        bottom: -5px;
+        left: 0px;
+        background: url(../img/index/mirror2.png)no-repeat;
+    }
+}
+
+@keyframes ship{
+    0%{
+        bottom: 180px;
+        right: 430px;
+    }
+    5%{
+        bottom: 200px;
+        right: 510px;
+    }
+    10%{
+        bottom: 180px;
+        right: 600px;
+    }
+    15%{
+        bottom: 190px;
+        right: 680px;
+    }
+    20%{
+        bottom: 200px;
+        right: 750px;
+    }
+    25%{
+        bottom: 200px;
+        right: 830px;
+    }
+    30%{
+        bottom: 200px;
+        right: 1000px;
+    }
+    35%{
+        bottom: 170px;
+        right: 1100px;
+    }
+    40%{
+        bottom: 170px;
+        right: 1180px;
+    }
+    42.5%{
+        bottom: 175px;
+        right: 1240px;
+    }
+    45%{
+        bottom: 180px;
+        right: 1300px;
+    }
+    49%{
+        bottom: 200px;
+        right: 1330px;
+        transform: scaleX(1);
+    }
+    50%{
+        bottom: 200px;
+        right: 1300px;
+        transform: scaleX(-1);
+    }
+    55%{
+        bottom: 200px;
+        right: 1270px;
+        transform: scaleX(-1);
+    }
+    57.5%{
+        bottom: 180px;
+        right: 1240px;
+        transform: scaleX(-1);
+    }
+    60%{
+        bottom: 175px;
+        right: 1200px;
+        transform: scaleX(-1);
+    }
+    65%{
+        bottom: 170px;
+        right: 1100px;
+        transform: scaleX(-1);
+    }
+    70%{
+        bottom: 170px;
+        right: 1100px;
+        transform: scaleX(-1);
+    }
+    75%{
+        bottom: 200px;
+        right: 1000px;
+        transform: scaleX(-1);
+    }
+    80%{
+        bottom: 200px;
+        right: 830px;
+        transform: scaleX(-1);
+    }
+    85%{
+        bottom: 200px;
+        right: 720px;
+        transform: scaleX(-1);
+    }
+    90%{
+        bottom: 190px;
+        right: 550px;
+        transform: scaleX(-1);
+    }
+    95%{
+        bottom: 180px;
+        right: 480px;
+        transform: scaleX(-1);
+    }
+    99%{
+        bottom: 200px;
+        right: 400px;
+        transform: scaleX(-1);
+    }
+    100%{
+        bottom: 180px;
+        right: 400px;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes mapBG{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes mainbtn{
+    0%{
+        scale: 0;
+        rotate: 5deg;
+    }
+    40%,90%{
+        scale: .8;
+        rotate: -5deg;
+    }
+    70%,100%{
+        scale: 1;
+        rotate: 0deg;
+    }
+}
+
+@keyframes floatmove{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
